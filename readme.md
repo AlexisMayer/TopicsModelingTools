@@ -20,6 +20,8 @@ devtools::install_github("AlexisMayer/TopicsModelingTools")
 ## ShinyApp
 
 Le package inclut une application R-Shiny qui vous permet d'utiliser l'outil depuis votre navigateur web favori. 
+Disponible directement ici : https://alexismayer.shinyapps.io/TopicsModelingTools/
+ou alors depuis R : 
 
 ``` r
 library(TopicsModelingTools)
