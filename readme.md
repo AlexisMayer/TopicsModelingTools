@@ -4,8 +4,7 @@
 <!-- badges: end -->
 
 Cet outil vous permet d'explorer et de visualiser les thèmes (topics) contenus dans un texte. 
-Il utilise des techniques avancées de traitement automatique de la langue naturelle pour nettoyer et analyser votre texte.
-Il est basé sur des packages tels que LDAvis pour générer des thèmes et faciliter votre analyse.
+Il utilise des techniques avancées de traitement automatique du language pour nettoyer et analyser le contenu de votre pdf.
 N'hésitez pas à expérimenter avec différents textes et paramètres pour obtenir les résultats les plus pertinents pour vous.
                
 ## Installation
