@@ -44,9 +44,8 @@ ui = fluidPage(
       , h3("Bienvenue dans notre analyseur de textes !", align = "center")
       , br()
       , tags$p("Cet outil vous permet d'explorer et de visualiser les thèmes (topics) contenus dans un texte. 
-               Il utilise des techniques avancées de traitement automatique de la langue naturelle pour nettoyer et analyser votre texte.
-               Il est basé sur des packages tels que LDAvis pour générer des thèmes et faciliter votre analyse.
-               N'hésitez pas à expérimenter avec différents textes et paramètres pour obtenir les résultats les plus pertinents pour vous."
+               Il utilise des techniques avancées de traitement automatique du language pour nettoyer et analyser le contenu de votre pdf.
+               N'hésitez pas à expérimenter avec différents paramètres afin d'obtenir les résultats les plus pertinents pour vous !"
                , align = "justify"
                , style = "font-size: 18px; line-height: 1.5; margin-left : 40px; margin-top : 40px;")
       )
@@ -118,9 +117,10 @@ server = function(input, output, session) {
     wc = lapply(unique(tps$topic), function(i) {
       tps %>% 
         filter(topic == i) %>% 
-        mutate_at(vars(freq), ~ (.x - min(.x)) / (max(.x) - min(.x))) %>% 
+        mutate_at(vars(freq), ~ (.x - min(.x)) / (max(.x) - min(.x)) +1) %>% 
         select(-topic) %>% 
-        ggwordcloud2()
+        ggwordcloud2(area_corr = TRUE) +
+        scale_size_area(max_size = 20) 
     })
     
     if(input$num_topics > 2) {
