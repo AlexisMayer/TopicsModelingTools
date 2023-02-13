@@ -4,7 +4,7 @@
 <!-- badges: end -->
 
 Cet outil vous permet d'explorer et de visualiser les thèmes (topics) contenus dans un texte. 
-Il utilise des techniques avancées de traitement automatique du language pour nettoyer et analyser le contenu de votre pdf.
+Il utilise des techniques avancées de traitement automatique du langage pour nettoyer et analyser le contenu de votre pdf.
 N'hésitez pas à expérimenter avec différents textes et paramètres pour obtenir les résultats les plus pertinents pour vous.
                
 ## Installation
